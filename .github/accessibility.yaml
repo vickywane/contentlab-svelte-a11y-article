@@ -1,0 +1,18 @@
+name: Contentlab-a11y-app Accessibility Test
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Node JS ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - uses: actions/checkout@v1
+      - name: Install application dependencies
+        run: npm install
+
+      - name: Checkout generated files
+        uses: actions/checkout@v1
