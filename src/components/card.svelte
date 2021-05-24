@@ -1,5 +1,5 @@
 <script>
-    import "../../static/home.css"
+    import "../assets/index.css"
     import { goto }  from '@sapper/app'
 
     const handleRouting = async  (name) => {

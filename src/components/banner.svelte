@@ -1,5 +1,5 @@
 <script context="module">
-    import "../../static/home.css"
+    import "../assets/index.css"
 </script>
 
 <div aria-labelledby="banner">

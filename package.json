@@ -1,9 +1,11 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "contentlab-a11y",
+  "description": "A svelte SPA to illustrate web accessibility",
   "version": "0.0.1",
+  "author": "Nwani Victory",
   "scripts": {
     "dev": "sapper dev",
+    "deploy": "sapper build",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build"

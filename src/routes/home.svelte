@@ -1,5 +1,5 @@
 <script context="module">
-    import "../../static/home.css"
+    import "../assets/index.css"
     import Card from '../components/card.svelte'
     import Banner from '../components/banner.svelte'
     import * as Data from '../data.json'

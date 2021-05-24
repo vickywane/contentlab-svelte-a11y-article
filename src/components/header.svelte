@@ -1,6 +1,6 @@
 <script>
     import { goto } from '@sapper/app'
-    import "../../static/home.css"
+    import "../assets/index.css"
 
     const handleRoute = async () => {
         await goto("/")

@@ -1,5 +1,5 @@
 <script context="module" >
-	import "../../static/home.css"
+	import "../assets/index.css"
 	import Header from '../components/header.svelte'
 
 	const data =    {
