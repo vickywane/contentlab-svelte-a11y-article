@@ -1,5 +1,4 @@
-name: Contentlab-a11y Accessibility Test
-on:
+name: Contentlab-a11y-app Accessibility Test
 
 jobs:
   build:
@@ -14,7 +13,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: Install application dependencies
         run: npm install
-
 
       - name: Checkout generated files
         uses: actions/checkout@v1
