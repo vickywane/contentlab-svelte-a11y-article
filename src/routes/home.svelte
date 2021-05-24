@@ -5,14 +5,7 @@
     import * as Data from '../data.json'
 
     export async function preload(page, session) {
-        return [
-            {
-                id: 1,
-                name: "Marry Lessor",
-                dob: "19-05-1975",
-                country: "England"
-            }
-        ]
+        return [   ]
     }
 </script>
 
