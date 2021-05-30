@@ -14,7 +14,7 @@ jobs:
         run: npm install
 
       - name: Test local application accessibility
-        run: yarn dev && sleep 10 && yarn test:a11y
+        run: yarn dev & sleep 10 & yarn test:a11y
         env:
           APPLICATION_URL: "http://localhost:3000"
 
@@ -22,7 +22,7 @@ jobs:
         uses: jakepartusch/wait-for-netlify-action@v1.2
         id: netlify_preview
         with:
-          site_name: "iwd-2021"
+          site_name: "contentlab-a11y"
           max_timeout: 60
 
       - name: Run Accessibility test against generated Netlify Deploy Preview
