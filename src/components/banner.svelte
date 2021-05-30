@@ -48,10 +48,8 @@
                     <iframe
                             class="iframe"
                             src="https://www.youtube.com/embed/hyOOQ_6L-2I"
-                            title="UN IWD TALK"-
-                    >
-
-                    </iframe>
+                            title="UN IWD TALK"
+                    ></iframe>
                 </div>
 
                 <p class="scroll-btn"  >
