@@ -28,7 +28,7 @@ jobs:
       - name: Run Accessibility test against generated Netlify Deploy Preview
         run: yarn test:a11y
         env:
-          APPLICATION_URL: ${{netlify_preview}}
+          APPLICATION_URL: ${{ steps.netlify_preview.outputs.url }}
 
       - name: Checkout generated files
         uses: actions/checkout@v1
