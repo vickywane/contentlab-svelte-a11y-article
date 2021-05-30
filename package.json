@@ -8,10 +8,13 @@
     "deploy": "sapper export",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
-    "start": "node __sapper__/build"
+    "start": "node __sapper__/build",
+    "test:a11y": "node tests/a11y.spec.js"
   },
   "dependencies": {
+    "axe-core": "^4.2.1",
     "compression": "^1.7.1",
+    "pa11y": "^6.0.0",
     "polka": "next",
     "sirv": "^1.0.0",
     "svelte-navigator": "^3.1.5"

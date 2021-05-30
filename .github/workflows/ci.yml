@@ -13,5 +13,22 @@ jobs:
       - name: Install application dependencies
         run: npm install
 
+      - name: Test local application accessibility
+        run: yarn dev && sleep 10 && yarn test:a11y
+        env:
+          APPLICATION_URL: "http://localhost:3000"
+
+      - name: Waiting for 200 from Netlify Deploy Preview
+        uses: jakepartusch/wait-for-netlify-action@v1.2
+        id: netlify_preview
+        with:
+          site_name: "iwd-2021"
+          max_timeout: 60
+
+      - name: Run Accessibility test against generated Netlify Deploy Preview
+        run: yarn test:a11y
+        env:
+          APPLICATION_URL: ${{netlify_preview}}
+
       - name: Checkout generated files
         uses: actions/checkout@v1
