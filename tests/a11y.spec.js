@@ -1,6 +1,8 @@
 const pa11y = require("pa11y")
 
-pa11y('http://localhost:3000', {
+const URL = process.env.APPLICATION_URL || 'http://localhost:3000'
+
+pa11y(URL, {
     includeWarnings: true,
     level: "warning",
     runners : [
