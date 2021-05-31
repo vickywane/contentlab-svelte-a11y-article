@@ -8,8 +8,4 @@ pa11y(URL, {
     runners : [
         "htmlcs", "axe"
     ]
-}).then((results) => {
-    // Do something with the results
-
-    console.log(results)
-});
+}).then((results) => console.log(results));
