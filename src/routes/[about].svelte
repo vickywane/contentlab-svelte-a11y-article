@@ -1,5 +1,6 @@
 <script context="module" >
 	import "../assets/index.css"
+	import Data from '../data.json'
 	import Header from '../components/header.svelte'
 
 	const data =    {
@@ -12,9 +13,17 @@
 			}
 
 	export async function preload(page, session) {
-		const { slug } = page.params;
-		console.log(slug)
+		const { about } = page.params;
+
+		// find single heroine by name
+		const Heroine =  Data.heroes.find(({ name }) =>  name === about )
+		console.log(Heroine)
+		return Heroine
 	}
+</script>
+
+<script>
+	export let Heroine;
 </script>
 
 <svelte:head>
@@ -36,7 +45,7 @@
 			<p>
 			<b>	Died</b>: {data.died}
 			</p>
-
+			<p> Heroine: {JSON.stringify(Heroine)} </p>
 			<p>
 				<b>Achievements </b>: {data.achievements}
 			</p>

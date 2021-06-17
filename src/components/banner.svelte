@@ -2,7 +2,7 @@
     import "../assets/index.css"
 </script>
 
-<div aria-labelledby="banner">
+<div>
     <div class="banner" id="banner">
         <div style="display: flex; justify-content: center; align-items: center;">
             <div>
@@ -11,7 +11,7 @@
                         src="https://res.cloudinary.com/dkfptto8m/image/upload/v1619841155/International-women-day-logo-1-removebg-preview.png"
                 />
                 <h1 class="banner-title">
-                    Women in <span style="color: #F88C00">leadership</span>
+                    Women in <b>leadership</b>
                     <br /> Achieving an equal future <br />
                     in a COVID-19 world.
                 </h1>
@@ -49,13 +49,7 @@
                             class="iframe"
                             src="https://www.youtube.com/embed/hyOOQ_6L-2I"
                             title="UN IWD TALK"
-                    >
-                        <track
-                                default
-                                kind="captions"
-                                srcLang="en"
-                        />
-                    </iframe>
+                    ></iframe>
                 </div>
 
                 <p class="scroll-btn"  >
