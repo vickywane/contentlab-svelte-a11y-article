@@ -11,8 +11,7 @@
 
 <div style="margin: 0 4rem;">
     <div class="align-center">
-        <img
-                alt={data.name}
+        <img  alt={data.name}
                 class="img"
                 src={data.img_uri}/>
     </div>
